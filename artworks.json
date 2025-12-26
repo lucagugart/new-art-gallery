@@ -4,21 +4,28 @@
     "title": "Sunset Collage",
     "year": 2023,
     "category": "Collage",
-    "image": "images/sunset.jpg",
+    "image": "images/art1.jpg",
     "description": "A vibrant sunset collage."
   },
   {
     "title": "Panel Art",
     "year": 2024,
     "category": "Panels",
-    "image": "images/panel.jpg",
+    "image": "images/art2.jpg",
     "description": "Abstract panel design."
   },
   {
     "title": "Cover Design",
     "year": 2022,
     "category": "Covers",
-    "image": "images/cover.jpg",
+    "image": "images/art3.jpg",
     "description": "Minimalist cover artwork."
   }
+  {
+    "title": "Untitled",
+    "year": 2021,
+    "category": "Panels",
+    "image": "images/art4.jpg",
+    "description": "Recycled paper on black panel"
+  }  
 ]
