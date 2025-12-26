@@ -49,12 +49,29 @@ function renderGallery(data) {
     const gallery = document.querySelector('.gallery');
     gallery.innerHTML = '';
     data.forEach(art => {
+        const card = document.createElement('div');
+        card.className = 'art-card';
+
         const img = document.createElement('img');
         img.src = art.image;
         img.alt = art.title;
-        img.title = `${art.title} (${art.year}) - ${art.category}`;
         img.onclick = () => openLightbox(img);
-        gallery.appendChild(img);
+
+        const caption = document.createElement('h3');
+        caption.textContent = art.title;
+
+        const meta = document.createElement('p');
+        meta.textContent = `${art.year} • ${art.category}`;
+
+        const desc = document.createElement('p');
+        desc.textContent = art.description;
+
+        card.appendChild(img);
+        card.appendChild(caption);
+        card.appendChild(meta);
+        card.appendChild(desc);
+
+        gallery.appendChild(card);
     });
 }
 

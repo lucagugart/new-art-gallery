@@ -83,3 +83,46 @@ select {
     padding: 8px;
     font-size: 1em;
 }
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.art-card {
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.art-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.art-card img:hover {
+    transform: scale(1.05);
+}
+
+.art-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.art-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
